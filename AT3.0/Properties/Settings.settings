@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AT3._0.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Templates" Type="System.String" Scope="User">
+      <Value Profile="(Default)">start</Value>
+    </Setting>
+    <Setting Name="Discomode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CNOptions" Type="System.String" Scope="User">
+      <Value Profile="(Default)">start</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
