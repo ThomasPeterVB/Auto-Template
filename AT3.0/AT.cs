@@ -35,19 +35,19 @@ namespace AT3._0
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
         private readonly int tolerance = 16;
-        private const int WM_NCHITTEST = 132;
-        private const int HTBOTTOMRIGHT = 17;
+        private const int referencePoint = 132;
+        private const int bottomRight = 17;
         private Rectangle sizeGripRectangle;
 
         protected override void WndProc(ref Message m)
         {
             switch (m.Msg)
             {
-                case WM_NCHITTEST:
+                case referencePoint:
                     base.WndProc(ref m);
                     var hitPoint = this.PointToClient(new Point(m.LParam.ToInt32() & 0xffff, m.LParam.ToInt32() >> 16));
                     if (sizeGripRectangle.Contains(hitPoint))
-                        m.Result = new IntPtr(HTBOTTOMRIGHT);
+                        m.Result = new IntPtr(bottomRight);
                     break;
                 default:
                     base.WndProc(ref m);
